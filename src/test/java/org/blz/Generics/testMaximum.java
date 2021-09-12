@@ -5,21 +5,18 @@ import org.junit.Test;
 
 public class testMaximum {
     @Test
-    public void weShouldGetMaxFloatAt1stPosition_ReturnCorrectValue(){
-        float actualResult = Maximum.getMaximum(13.4f,12.3f,11.2f);
-        Assert.assertEquals(13.4,actualResult,0.0);
-
+    public void weShouldGetMaxStringAt1stPosition_ReturnCorrectValue(){
+        String actualResult= Maximum.getMaximum("gh","fg","ef");
+        Assert.assertEquals("gh",actualResult);
     }
     @Test
-    public void weShouldGetMaxFloatAt2ndPosition_ReturnCorrectValue(){
-        float actualResult = Maximum.getMaximum(12.3f,13.4f,11.2f);
-        Assert.assertEquals(13.4,actualResult,0.0);
-
+    public void weShouldGetMaxStringAt2stPosition_ReturnCorrectValue(){
+        String actualResult= Maximum.getMaximum("fg","gh","ef");
+        Assert.assertEquals("gh",actualResult);
     }
     @Test
-    public void weShouldGetMaxFloatAt3rdPosition_ReturnCorrectValue(){
-        float actualResult = Maximum.getMaximum(11.2f,12.3f,13.4f);
-        Assert.assertEquals(13.4,actualResult,0.0);
-
+    public void weShouldGetMaxStringAt3stPosition_ReturnCorrectValue(){
+        String actualResult= Maximum.getMaximum("ef","fg","gh");
+        Assert.assertEquals("gh",actualResult);
     }
 }

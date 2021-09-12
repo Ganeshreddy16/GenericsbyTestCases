@@ -2,8 +2,8 @@ package org.blz.Generics;
 
 public class Maximum {
 
-    public static Float getMaximum(Float a, Float b, Float c) {
-        Float max=a;
+    public static String getMaximum(String a, String b, String c) {
+        String max=a;
             if(b.compareTo(a)>0 && b.compareTo(c)>0)
             {
             max=b;
